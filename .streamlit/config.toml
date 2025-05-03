@@ -1,0 +1,26 @@
+# .streamlit/config.toml
+
+[theme]
+# Spotify Green for primary elements
+primaryColor="#1DB954"
+
+# Dark background colors
+backgroundColor="#121212"
+secondaryBackgroundColor="#1E1E1E" # Slightly lighter for sidebars, expanders, etc.
+
+# White text for contrast
+textColor="#FFFFFF"
+
+# Use a standard sans-serif font
+font="sans serif"
+
+
+[server]
+# Optional: Automatically rerun script when app.py or config.toml changes
+runOnSave = true
+
+
+[client]
+# Optional: Hide the default Streamlit menu button and footer for a cleaner look
+showSidebarNavigation = false
+showFooter = false
