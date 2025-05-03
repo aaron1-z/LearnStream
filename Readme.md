@@ -3,8 +3,8 @@
 
 Turn curiosity into bite-sized audio lessons! LearnStream allows users to generate personalized, short audio snippets (~3-5 minutes) on topics they want to learn about, perfect for listening during commutes, workouts, or breaks. This project was submitted for the Global AI Hackathon.
 
-**Demo Video:** [Watch the 60-second Demo Here!]([Link to Demo Video])
-**Tech Video:** [Watch the 60-second Tech Breakdown Here!]([Link to Tech Video])
+**Demo Video:** [Watch the 60-second Demo Here!]([https://drive.google.com/file/d/1xg6AW8JxjEvmPVtysAO9KAdU_gNGR-Qm/view?usp=sharing])
+**Tech Video:** [Watch the 60-second Tech Breakdown Here!]([https://drive.google.com/file/d/1xl20Fykf4C8pe7tBQU1KQFUR2RSRmgmh/view?usp=sharing])
 
 ---
 
@@ -96,17 +96,4 @@ Follow these steps to set up and run LearnStream locally:
 *   **UI Theme:** Controlled by `.streamlit/config.toml`.
 *   **Snippet Duration:** The target length (in minutes) for generated text can be adjusted via the `SNIPPET_DURATION_MINUTES` constant near the top of `app.py`. *Note: Longer durations require more ElevenLabs credits.*
 *   **Voice Mapping:** The mapping between narration tones and specific ElevenLabs voice names can be customized within the `voice_name_map` dictionary inside the `generate_audio_snippet_elevenlabs` function in `app.py`. Ensure the voice names match those available in your ElevenLabs account (check logs on first run or ElevenLabs website).
-
-## Project Structure
-
-├── .streamlit/
-│ └── config.toml # Streamlit UI theme configuration
-├── audio_outputs/ # Directory for generated MP3 files (ignored by default)
-├── venv/ # Python virtual environment (ignored)
-├── .env # Local file for API keys (MUST NOT be committed)
-├── .env.example # Template for .env file
-├── .gitignore # Specifies intentionally untracked files for Git
-├── app.py # Main Streamlit application script
-├── README.md # This file
-└── requirements.txt # Python dependencies
 
